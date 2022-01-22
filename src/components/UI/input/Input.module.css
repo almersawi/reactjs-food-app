@@ -1,0 +1,17 @@
+.input {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.input label {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.input input {
+    padding: 0.4rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    max-width: 50px;
+} 

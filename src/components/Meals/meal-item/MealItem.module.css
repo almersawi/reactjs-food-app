@@ -1,0 +1,51 @@
+.meal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.meal_info, .meal_actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.meal_info h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.meal_info p {
+    font-style: italic;
+    margin: 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E32934;
+    font-style: normal !important;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amount h4 {
+    margin: 0;
+}
+
+.amount input {
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    max-width: 50px;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+}

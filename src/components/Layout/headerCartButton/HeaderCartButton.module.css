@@ -1,0 +1,38 @@
+.button {
+    cursor: pointer;
+    border: none;
+    background: #b20000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.button:hover,
+.button:active {
+    background: #fff;
+    color: #b20000;
+}
+
+.icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+}
+
+.badge {
+    background-color: #d62121;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.button:hover > .badge {
+    color: #fff;
+}

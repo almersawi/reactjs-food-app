@@ -1,0 +1,25 @@
+.cart_items {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.cart_items li {
+    font-weight: bold;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem
+}

@@ -1,6 +1,8 @@
 .cart_items {
     list-style-type: none;
     padding-inline-start: 0px;
+    max-height: 30rem;
+    overflow: auto;
 }
 
 .cart_items li {
@@ -13,9 +15,6 @@
     font-size: 18px;
     font-weight: bold;
     margin: 20px 0;
-    padding: 20px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 }
 
 .actions {

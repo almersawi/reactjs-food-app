@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://react-food-c2683-default-rtdb.firebaseio.com/';

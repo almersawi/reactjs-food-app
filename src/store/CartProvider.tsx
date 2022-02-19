@@ -8,15 +8,16 @@ type Props = {
 }
 
 type action = {
-    type: 'ADD_ITEM' | 'REMOVE_ITEM'
-    payload: Meal | string
+    type: 'ADD_ITEM' | 'REMOVE_ITEM' | 'CLEAR'
+    payload?: Meal | string
 }
 
 const defaultCartState: CartContextProps = {
     items: [],
     totalAmount: 0,
     addItem: () => {},
-    removeItem: () => {}
+    removeItem: () => {},
+    clear: () => {}
 }
 
 const cartReducer = (state: CartContextProps, action: action) => {
@@ -66,6 +67,10 @@ const cartReducer = (state: CartContextProps, action: action) => {
         return newState;
     }
 
+    else if(action.type === 'CLEAR') {
+        return defaultCartState;
+    }
+
     return defaultCartState;
 
 }
@@ -82,11 +87,16 @@ const CartProvider = ({ children } : Props) => {
         dispacthCartAction({ type: 'REMOVE_ITEM', payload: id });
     }
 
+    const clearCartHandeler = () => {
+        dispacthCartAction({ type: 'CLEAR' });
+    }
+
     const cartContext: CartContextProps = {
         items: cartState.items,
         totalAmount: cartState.totalAmount,
         addItem: addItemToCartHandeler,
-        removeItem: removeItemFromCartHandeler
+        removeItem: removeItemFromCartHandeler,
+        clear: clearCartHandeler
     }
 
     return (

@@ -42,11 +42,11 @@ const AvailableMealsForm = () => {
   return (
     <form className={classes.form} onSubmit={formSubmitHandler}>
       <div className={classes.formBody}>
-        <div className={classes.formControl}>
+        <div className="form-control">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" onChange={onNameChange} value={name} />
         </div>
-        <div className={classes.formControl}>
+        <div className="form-control">
           <label htmlFor="description">Description</label>
           <input
             type="description"
@@ -55,7 +55,7 @@ const AvailableMealsForm = () => {
             value={description}
           />
         </div>
-        <div className={classes.formControl}>
+        <div className="form-control">
           <label htmlFor="price">Price</label>
           <input
             type="number"

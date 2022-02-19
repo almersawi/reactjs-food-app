@@ -1,0 +1,18 @@
+.formBody {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.formFooter {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+}
+
+.confirmation {
+    color: #5b9e02;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}

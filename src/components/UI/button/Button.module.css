@@ -12,9 +12,11 @@
     gap: 1rem;
 }
 
-.disabled {
-    background-color: #ff5762;
+.button:disabled, .button:disabled:hover {
+    background-color: #eee !important;
+    color: rgb(70, 70, 70);
     cursor: not-allowed;
+    border: solid 1px rgb(145, 145, 145);
 }
 
 .button:hover:enabled {

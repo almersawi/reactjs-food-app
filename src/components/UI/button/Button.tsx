@@ -4,7 +4,7 @@ const Button = ({ children, onClick, className, disabled, btnAlt,...props } : an
     return (
         <button
             onClick={onClick}
-            className={`${className} ${classes.button} ${disabled ? 'disabled' : ''} ${btnAlt ? classes.btn_alt : ''}`}
+            className={`${className} ${classes.button} ${btnAlt ? classes.btn_alt : ''}`}
             disabled={disabled}
             {...props}
         >
